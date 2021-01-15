@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html lang="pt_br">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+  <title name="titulo">Teste Formulário</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/motive.css">
+</head>
+
+<body>
+ 
+
+  <section class="container section">
+    <div class="row">
+      <div class="col-md-12">
+
+        <form action="envio.php" method="POST" enctype="multipart/form-data">
+
+          <div class="row padding-xs-top">
+            <div class="form-group col-md-12 col-xs-12">
+
+              <h3 class="pd-20 cl-w bkgrd-r">TIPO DE EMBALAGEM</h3>
+
+              <div class="form-group">
+                <input type="radio" name="embalagem" value="bolsa"> Bolsa
+                <input type="radio" name="embalagem" value="saco"> Saco
+                <input type="radio" name="embalagem" value="valvulado"> Válvulado
+                <input type="radio" name="embalagem" value="bobina"> Bobina
+                <input type="radio" name="embalagem" value="outros"> Outros
+              </div>
+
+
+              <div class="form-group">
+                <textarea placeholder="Observações" class="form-control input-lg" rows="4"
+                  name="observacoes"></textarea>
+              </div>
+
+              <h3 class="pd-20 cl-w bkgrd-r">BOLSAS</h3>
+            </div>
+
+
+            <div class="col-md-7 col-xs-7">
+              <div class="form-group">
+                <input type="radio" name="bolsa" value="sorriso"> Sorriso
+                <input type="radio" name="bolsa" value="alça-fita"> Alça-Fita
+                <input type="radio" name="bolsa" value="camiseta"> Camiseta
+                <input type="radio" name="bolsa" value="outros"> Outros
+              </div>
+            </div>
+
+            <div class="row padding-xs-top">
+              <div class="col-md-5 col-xs-12">
+                <div class="form-group">
+                  <img  class="pd-20 " src="images/bolsa.jpg" alt="bolsa-exemplo">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-12 col-xs-12">
+              <h3 class="pd-20 cl-w bkgrd-r">MEDIDAS</h3>
+              <div class="form-group">
+                <input type="radio" name="medidas" value="16x20"> 16x20
+                <input type="radio" name="medidas" value="20x30"> 20x30
+                <input type="radio" name="medidas" value="30x40"> 30x40
+                <input type="radio" name="medidas" value="40x50"> 40x50
+                <input type="radio" name="medidas" value="outros"> Outros
+              </div>
+            </div>
+
+            <div class="col-md-12 col-xs-12">
+              <h3 class="pd-20 cl-w bkgrd-r">SANFONA</h3>
+              <div class="form-group">
+                <input type="radio" name="sanfona" value="não tem"> Não Tem
+                <input type="radio" name="sanfona" value="lateral"> Lateral
+                <input type="radio" name="sanfona" value="fundo"> Fundo
+                <input type="radio" name="sanfona" value="boca"> Boca
+                <input type="radio" name="sanfona" value="5cm"> 5cm
+                <input type="radio" name="sanfona" value="10cm"> 10cm
+                <input type="radio" name="sanfona" value="outros"> Outros
+              </div>
+
+            </div>
+
+            <div class="col-md-12 col-xs-12">
+              <h3 class="pd-20 cl-w bkgrd-r">REFORÇO</h3>
+              <div class="form-group">
+                <input type="radio" name="reforço" value="não tem"> Não Tem
+                <input type="radio" name="reforço" value="boca"> Boca
+                <input type="radio" name="reforço" value="5cm"> 5cm
+                <input type="radio" name="reforço" value="10cm"> 10cm
+                <input type="radio" name="reforço" value="outros"> Outros
+              </div>
+
+            </div>
+
+            <div class="col-md-12 col-xs-12">
+              <h3 class="pd-20 cl-w bkgrd-r">COR DE FUNDO</h3>
+              <div class="form-group">
+                <input name="cor" type="color" list="presetColors">
+                <datalist>
+                  <option name="cor" value="#FFF">Branco</option>
+                  <option name="cor" value="#000">Preto</option>
+                  <option name="cor" value="#F7F700">Amarelo</option>
+                  <option name="cor" value="#DA0A05">Vermelho</option>
+                  <option name="cor" value="#FF1167">Rosa</option>
+                </datalist>
+              </div>
+
+            </div>
+
+            <div class="col-md-12 col-xs-12">
+              <h3 class="pd-20 cl-w bkgrd-r">CORES DA IMPRESSÃO</h3>
+              <div class="form-group">
+                <input type="radio" name="cores-da-impressao" value="não sei"> Não Sei
+                <input type="radio" name="cores-da-impressao" value="cromia"> Cromia
+                <input type="radio" name="cores-da-impressao" value="unica"> Única
+                <input type="radio" name="cores-da-impressao" value="outros"> Outros
+              </div>
+
+            </div>
+
+            <div class="col-md-12 col-xs-12">
+              <h3 class="pd-20 cl-w bkgrd-r">TIPO DE IMPRESSÃO</h3>
+              <div class="form-group">
+                <input type="radio" name="impressao" value="frente"> Frente
+                <input type="radio" name="impressao" value="frente e verso"> Frente e Verso
+              </div>
+
+            </div>
+
+            <div class="col-md-12 col-xs-12">
+              <h3 class="pd-20 cl-w bkgrd-r">ENVIO DE ARQUIVO</h3>
+              <div class="form-group">
+                <input type="radio" name="arquivo" value="sim"> Sim
+                <input type="radio" name="arquivo" value="não"> Não
+              </div>
+              <div class="form-group">
+                <input type="file" multiple="multiple" class="wd-100 btn btn-primary btn-lg" name="arquivo" id="arquivo">
+              </div>
+            </div>
+
+          </div>
+
+          <div class="row">
+            <div class="text-center col-xs-12">
+
+              <button id="btn-enviar" type="submit" class="btn btn-primary btn-lg">Enviar</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>
