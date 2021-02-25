@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="no-js ie9" lang="en"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html class="no-js" lang="pt-br">
+<!--<![endif]-->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Corpress - Modern Corporate Template">
+  <meta name="author" content="CreateIT">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"
+
+  <script src="cdn-cgi/apps/head/CZ3CFmKcMfCcupa_86mxMcuVsN8.js"></script>
+  <style>
+    ul {
+      list-style: none;
+    }
+
+    .rev-slider {
+      overflow: hidden !important;
+      display: none;
+    }
+
+    .rev-slider.revslider-initialised {
+      display: block;
+    }
+
+    #rev1 {
+      height: 620px;
+    }
+
+    #rev2 {
+      height: 840px;
+    }
+
+  </style>
+
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/custom.css">
+  <link rel="stylesheet" type="text/css" href="motive.css">
+
+  <script src="js/modernizr.custom.js"></script>
+  <script src="js/device.min.html"></script>
+
+
+
+<section class="media-section darkbg" data-stellar-background-ratio="0.5" data-height="350" data-type="parallax"
+  data-image="images/demo-content/Banner-topo.png"
+  data-image-mobile="images/demo-content/Banner-topo.png">
+  <div class="inner">
+    <div class="text-center">
+      <h2 class="uppercase page-header no-margin" style="color: #000 !important;">Orçamento</h2>
+    </div>
+  </div>
+</section>
+
+
+<section class="container section">
+  <div class="row">
+    <div class="col-md-12">
+
+      <form action="envio.php" method="POST" enctype="multipart/form-data">
+
+        <div class="row padding-xs-top">
+          <div class="form-group col-md-12 col-xs-12">
+            <h3 class="pd-20 cl-w bkgrd-r">INFORMAÇÕES GERAIS</h3>
+
+
+            <div class="col-md-6 col-xs-12">
+              <div class="form-group">
+                <input placeholder="Nome" required type="text" name="nome" class="form-control input-lg">
+              </div>
+            </div>
+
+            <div class="col-md-6 col-xs-12">
+              <div class="form-group">
+                <input placeholder="E-mail" required type="email" name="email" class="form-control input-lg">
+              </div>
+            </div>
+
+            <div class="col-md-6 col-xs-12">
+              <div class="form-group">
+                <input placeholder="Telefone" required type="tel" name="telefone" class="form-control input-lg">
+              </div>
+            </div>
+
+            <div class="col-md-6 col-xs-12">
+              <div class="form-group">
+                <input placeholder="Empresa" required type="text" name="empresa" class="form-control input-lg">
+              </div>
+            </div>
+
+          </div>
+          <div class="form-group col-md-12 col-xs-12">
+
+            <h3 class="pd-20 cl-w bkgrd-r">TIPO DE EMBALAGEM</h3>
+
+
+            <div class="form-group">
+              <input type="radio" name="embalagem" value="bolsa"> Bolsa
+              <input type="radio" name="embalagem" value="saco"> Saco
+              <input type="radio" name="embalagem" value="valvulado"> Valvulado
+              <input type="radio" name="embalagem" value="bobina"> Bobina
+              <input type="radio" name="embalagem" value="outros"> Outros
+            </div>
+
+
+            <div class="form-group">
+              <textarea placeholder="Observações" class="form-control input-lg" rows="4" name="observacoes"></textarea>
+            </div>
+
+
+            <h3 class="pd-20 cl-w bkgrd-r">BOLSAS</h3>
+            <p><b>Caso for escolhido a opção "bolsa", selecione uma bolsa desejada*</b></p>
+          </div>
+
+          <div class="col-md-12 col-xs-12">
+            <div class="form-group">
+              <input type="radio" name="bolsa" value="sorriso"> Sorriso
+              <input type="radio" name="bolsa" value="alça-fita"> Alça-Fita
+              <input type="radio" name="bolsa" value="camiseta"> Camiseta
+              <input type="radio" name="bolsa" value="outros"> Outros
+            </div>
+
+            <div class="form-group">
+              <input placeholder="Bolsa Desejada" class="form-control-2 input-lg" rows="4" name="bolsa-desejada">
+            </div>
+
+          </div>
+          <!--
+          <div class="row padding-xs-top">
+            <div class="col-md-5 col-xs-12">
+              <div class="form-group">
+                <img class="pd-20" src="images/form/bolsa.png" alt="bolsa-exemplo">
+              </div>
+            </div>
+          </div> -->
+
+          <div class="col-md-12 col-xs-12">
+            <h3 class="pd-20 cl-w bkgrd-r">ESPESSURA</h3>
+
+            <div class="form-group">
+              <input placeholder="Espessura Desejada" class="form-control-2 input-lg" rows="4"
+                name="espessura-desejada">
+            </div>
+          </div>
+
+
+
+          <div class="col-md-12 col-xs-12">
+            <h3 class="pd-20 cl-w bkgrd-r">MEDIDAS</h3>
+            <div class="form-group">
+              <input type="radio" name="medidas" value="16x20"> 16x20
+              <input type="radio" name="medidas" value="20x30"> 20x30
+              <input type="radio" name="medidas" value="30x40"> 30x40
+              <input type="radio" name="medidas" value="40x50"> 40x50
+              <input type="radio" name="medidas" value="outros"> Outros
+            </div>
+
+            <div class="form-group">
+              <input placeholder="Medida Desejada" class="form-control-2 input-lg" rows="4" name="medida-desejada">
+            </div>
+
+          </div>
+
+          <div class="col-md-12 col-xs-12">
+            <h3 class="pd-20 cl-w bkgrd-r">COR DA ALÇA</h3>
+            <div class="form-group">
+
+              <input name="cor-da-alça" type="color" list="presetColors">
+              <datalist>
+                <option name="cor-da-alça" value="#FFF">Branco</option>
+                <option name="cor-da-alça" value="#000">Preto</option>
+                <option name="cor-da-alça" value="#F7F700">Amarelo</option>
+                <option name="cor-da-alça" value="#DA0A05">Vermelho</option>
+                <option name="cor-da-alça" value="#FF1167">Rosa</option>
+              </datalist>
+
+            </div>
+
+          </div>
+
+          <div class="col-md-12 col-xs-12">
+            <h3 class="pd-20 cl-w bkgrd-r">REFORÇO</h3>
+            <div class="form-group">
+              <input type="radio" name="reforço" value="não tem"> Não Tem
+              <input type="radio" name="reforço" value="sim"> Sim
+            </div>
+
+            <div class="form-group">
+              <input placeholder="Medida Desejada" class="form-control-2 input-lg" rows="4" name="reforço-desejado">
+            </div>
+
+          </div>
+
+          <div class="col-md-12 col-xs-12">
+            <h3 class="pd-20 cl-w bkgrd-r">SANFONA</h3>
+            <div class="form-group">
+              <input type="radio" name="sanfona" value="sem sanfona"> Sem sanfona
+              <input type="radio" name="sanfona" value="sanfona lateral"> Sanfona lateral
+              <input type="radio" name="sanfona" value="sanfona fundo"> Sanfona fundo
+            </div>
+
+            <div class="form-group">
+              <input placeholder="Digite o valor da Sanfona" class="form-control-2 input-lg" rows="4"
+                name="sanfona-desejada">
+            </div>
+
+          </div>
+
+          <div class="col-md-12 col-xs-12">
+            <h3 class="pd-20 cl-w bkgrd-r">VALVULADO</h3>
+
+            <div class="form-group">
+              <input placeholder="Digite a Válvula" class="form-control-2 input-lg" rows="4" name="valvulado-desejado">
+            </div>
+          </div>
+
+          <div class="col-md-12 col-xs-12">
+            <h3 class="pd-20 cl-w bkgrd-r">COR DE FUNDO</h3>
+            <div class="form-group">
+
+              <input name="cor" type="color" list="presetColors">
+              <datalist>
+                <option name="cor" value="#FFF">Branco</option>
+                <option name="cor" value="#000">Preto</option>
+                <option name="cor" value="#F7F700">Amarelo</option>
+                <option name="cor" value="#DA0A05">Vermelho</option>
+                <option name="cor" value="#FF1167">Rosa</option>
+              </datalist>
+              <input type="radio" name="outra-cor" value="transparente"> Transparente
+            </div>
+
+            <p><b>Cor do substrato*</b></p>
+          </div>
+
+          <div class="col-md-12 col-xs-12">
+            <h3 class="pd-20 cl-w bkgrd-r">CORES DA IMPRESSÃO</h3>
+
+            <div class="form-group">
+              <input type="radio" name="cores-da-impressao" value="não sei"> Não Sei
+              <input type="radio" name="cores-da-impressao" value="cromia"> Cromia
+              <input type="radio" name="cores-da-impressao" value="unica"> Única
+            </div>
+
+
+          </div>
+
+          <div class="col-md-12 col-xs-12">
+            <h3 class="pd-20 cl-w bkgrd-r">TIPO DE IMPRESSÃO</h3>
+            <div class="form-group">
+              <input type="radio" name="tipo-de-impressao" value="frente"> Frente
+              <input type="radio" name="tipo-de-impressao" value="frente e verso"> Frente e Verso
+            </div>
+
+          </div>
+
+          <div class="col-md-12 col-xs-12">
+            <h3 class="pd-20 cl-w bkgrd-r">SISTEMA DE IMPRESSÃO</h3>
+            <div class="form-group">
+              <input type="radio" name="sistema-de-impressao" value="interno"> Interno
+              <input type="radio" name="sistema-de-impressao" value="externo"> Externo
+            </div>
+
+          </div>
+
+
+          <div class="col-md-12 col-xs-12">
+            <h3 class="pd-20 cl-w bkgrd-r">REBOBINAMENTO</h3>
+
+            <div class="form-group">
+              <input type="radio" name="rebobinamento" value="interno"> Interno
+              <input type="radio" name="rebobinamento" value="externo"> Externo
+            </div>
+
+          </div>
+
+          <div class="col-md-12 col-xs-12">
+            <h3 class="pd-20 cl-w bkgrd-r">TIPO DE MATERIAL</h3>
+
+            <div class="form-group">
+
+              <input type="checkbox" name="pp" value="PP"> PP
+              <input type="checkbox" name="peabd" value="PEABD"> PEABD
+              <input type="checkbox" name="pemd" value="PEMD"> PEMD
+              <input type="checkbox" name="pebd" value="PEBD"> PEBD
+
+            </div>
+
+            <div class="form-group">
+              <input placeholder="Material Desejado" class="form-control-2 input-lg" rows="4" name="material-desejado">
+            </div>
+
+          </div>
+
+          <div class="col-md-12 col-xs-12">
+            <h3 class="pd-20 cl-w bkgrd-r">LAMINAÇÃO</h3>
+
+            <div class="form-group">
+              <input type="radio" name="laminacao" value="sim"> Sim
+              <input type="radio" name="laminacao" value="nao"> Não
+            </div>
+
+          </div>
+
+          <div class="col-md-12 col-xs-12">
+            <h3 class="pd-20 cl-w bkgrd-r">ENVIO DE ARQUIVO</h3>
+            <div class="form-group">
+              <p><b>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum beatae ullam, minima. <a
+                    target="_blank" href="https://wetransfer.com/">https://wetransfer.com/ </a></b></p>
+              <input type="file" multiple="multiple" class="wd-100 btn btn-primary btn-lg" name="arquivo" id="arquivo">
+            </div>
+          </div>
+
+          <div class="col-md-12 col-xs-12">
+            <h3 class="pd-20 cl-w bkgrd-r">OBSERVAÇÕES EXTRAS</h3>
+
+            <div class="form-group">
+              <textarea placeholder="Observações" class="form-control input-lg" rows="4"
+                name="observacoes-extras"></textarea>
+            </div>
+
+          </div>
+        </div>
+    </div>
+
+    <div class="row">
+      <div class="text-center col-xs-12">
+
+        <button id="btn-enviar" type="submit" class="btn btn-primary btn-lg">Enviar</button>
+      </div>
+    </div>
+    </form>
+  </div>
+  </div>
+</section>
+
+
+<!-- BOTÃO DE OBSERVAÇÃO! -->
+<!-- <a class="btn-obs" href="observacoes" target="_blank"> <i style="margin-top:16px" class="fa fa-question"></i></a> -->

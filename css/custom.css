@@ -1,0 +1,62 @@
+@media only screen and (max-width: 768px) {
+  mobile-hover {
+    background-color: black;
+  }
+}
+
+.my-padding {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.p-t-50 {
+  padding-top: 50px;
+}
+
+.icon-menu {
+  width: 32px;
+}
+
+.my-btn2 {
+  background-color: #F5B225;
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 18px;
+  top: 10px;
+  position: relative;
+  font-weight: 700;
+}
+
+.my-btn2:hover {
+  background-color: rgb(218, 149, 0);
+}
+
+.my-btn2 a:hover {
+  color: #fff !important;
+}
+
+
+
+/* Form */
+
+.bkgrd-r {
+  background-color: red;
+  padding: 7px 0px;
+}
+
+.cl-w {
+  color: #fff;
+}
+
+.pd-20 {
+  padding-left: 20px;
+}
+
+.wd-100 {
+  width: 100%;
+}
+
+body {
+  overflow-x: hidden !important;
+}
